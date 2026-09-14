@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Prevents scrollbars */
+    background-color: #1a1a1a; /* Dark background */
+    font-family: sans-serif;
+}
+
+#output {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#webcam {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 240px;
+    border-radius: 12px;
+    border: 2px solid #444;
+    transform: scaleX(-1); /* Mirrors the video like a mirror */
+    z-index: 10;
+}
+
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    z-index: 20;
+}
