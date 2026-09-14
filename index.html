@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Avatar Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading">Loading AI Models & Camera...</div>
+    
+    <!-- Small webcam feed in the corner to see yourself -->
+    <video id="webcam" autoplay playsinline></video>
+    
+    <!-- The main 3D output -->
+    <canvas id="output"></canvas>
+
+    <!-- Import Map tells the browser where to find Three.js -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+        }
+      }
+    </script>
+    
+    <!-- Link to your logic script -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
