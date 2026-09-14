@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Avatar Prototype</title>
+    <title>Skeletal Smiley Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="loading">Loading AI Models & Camera...</div>
+    <div id="loading">Loading AI Vision & Avatar Skeleton...</div>
     
-    <!-- Small webcam feed in the corner to see yourself -->
+    <!-- Mirror-flipped live feed -->
     <video id="webcam" autoplay playsinline></video>
     
-    <!-- The main 3D output -->
+    <!-- Unified tracking application canvas -->
     <canvas id="output"></canvas>
 
-    <!-- Import Map tells the browser where to find Three.js -->
+    <!-- Essential ThreeJS packages mapped as modules -->
     <script type="importmap">
       {
         "imports": {
@@ -23,8 +23,6 @@
         }
       }
     </script>
-    
-    <!-- Link to your logic script -->
     <script type="module" src="script.js"></script>
 </body>
 </html>
